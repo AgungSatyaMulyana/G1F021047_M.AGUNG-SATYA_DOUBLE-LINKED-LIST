@@ -10,7 +10,6 @@ struct Baju{
 
 Baju *head, *tail, *cur, *newNode, *del, *beforeNode;
 
-// Create Double Linked List
 void createDoubleLinkedList( string SPT[3] ){
   head = new Baju();
   head->merek = SPT[0];
@@ -37,7 +36,6 @@ int countDoubleLinkedList()
   }
 }
 
-
 void addFirst( string SPT[3] ){
   if( head == NULL ){
     cout << "Double Linked List belum selesai!!!";
@@ -53,7 +51,6 @@ void addFirst( string SPT[3] ){
   }
 }
 
-// Add Last
 void addLast( string SPT[3] ){
   if( head == NULL ){
     cout << "Double Linked List belum dibuat!!!";
@@ -68,7 +65,6 @@ void addLast( string SPT[3] ){
     tail = newNode;
   }
 }
-
 
 void addMiddle( string SPT[3], int posisi ){
   if( head == NULL ){
@@ -115,7 +111,6 @@ void removeFirst()
   }
 }
 
-
 void removeLast()
 {
   if( head == NULL ){
@@ -127,7 +122,6 @@ void removeLast()
     delete del;
   }
 }
-
 
 void removeMiddle(int posisi){
   if( head == NULL ){
@@ -152,7 +146,6 @@ void removeMiddle(int posisi){
     }
   }
 }
-
 
 void printDoubleLinkedList()
 {
