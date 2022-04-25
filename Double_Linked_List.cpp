@@ -2,10 +2,10 @@
 using namespace std;
 
 
-struct Bjau{
+struct Baju{
   string merek, warna, ukuran;
-  Sepatu *prev;
-  Sepatu *next;
+  Baju *prev;
+  Baju *next;
 };
 
 Baju *head, *tail, *cur, *newNode, *del, *beforeNode;
